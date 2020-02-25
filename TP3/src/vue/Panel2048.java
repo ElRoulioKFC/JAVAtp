@@ -1,10 +1,12 @@
-package tp3;
+package vue;
 
 import java.awt.*;
 import java.util.Observable;
 import java.util.Observer;
 
 import package2048.Jeu2048;
+import vue.*;
+
 
 public class Panel2048 extends Panel {
 

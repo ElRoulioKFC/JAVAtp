@@ -1,4 +1,4 @@
-package tp3;
+package vue;
 
 import java.awt.*;
 import java.util.Observable;

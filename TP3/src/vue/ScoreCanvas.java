@@ -1,4 +1,4 @@
-package tp3;
+package vue;
 import java.awt.*;
 
 import package2048.Jeu2048;

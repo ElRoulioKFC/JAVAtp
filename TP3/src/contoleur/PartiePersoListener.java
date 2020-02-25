@@ -1,9 +1,10 @@
-package tp3;
+package contoleur;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import package2048.Jeu2048;
+import vue.Fenetre;
 
 public class PartiePersoListener implements ActionListener{
 	private Window w;

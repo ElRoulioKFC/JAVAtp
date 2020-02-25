@@ -1,4 +1,4 @@
-package tp3;
+package vue;
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.GridBagConstraints;
@@ -6,6 +6,7 @@ import java.awt.GridBagLayout;
 
 import javax.swing.JButton;
 
+import contoleur.*;
 import package2048.Jeu2048;
 
 public class Fenetre extends Frame {

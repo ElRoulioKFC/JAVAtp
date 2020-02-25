@@ -1,5 +1,8 @@
-package tp3;
+package vue;
 import java.awt.*;
+
+import contoleur.FermerFenetre;
+import contoleur.PartiePersoListener;
 
 public class FenetrePartiePerso extends Frame{
 	public static int HAUTEUR = 600, LARGEUR = 500;

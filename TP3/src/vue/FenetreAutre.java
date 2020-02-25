@@ -1,7 +1,9 @@
-package tp3;
+package vue;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
+
+import contoleur.NavigationListener;
 
 public class FenetreAutre  extends Frame{
 	public static int CLASSEMENT = 0, AIDE = 1,REGLAGE =2;

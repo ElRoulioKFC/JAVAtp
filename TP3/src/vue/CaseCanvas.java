@@ -1,4 +1,4 @@
-package tp3;
+package vue;
 
 import java.awt.*;
 
@@ -7,12 +7,14 @@ import package2048.Jeu2048;
 import java.util.Observable;
 import java.util.Observer;
 
+import contoleur.ToucheListener;
+
 public class CaseCanvas extends Canvas implements Observer {
 	private int x, y;
 	private Jeu2048 jeu;
 	private double nb;
 
-	CaseCanvas(Jeu2048 jeu, int x, int y) {
+	public CaseCanvas(Jeu2048 jeu, int x, int y) {
 		this.jeu = jeu;
 		this.x = x;
 		this.y = y;

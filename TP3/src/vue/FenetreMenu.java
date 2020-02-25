@@ -1,7 +1,11 @@
-package tp3;
+package vue;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
+
+import contoleur.FermerFenetre;
+import contoleur.NavigationListener;
+import contoleur.PartiePersoFenetreListener;
 
 public class FenetreMenu  extends Frame{
 	public static int HAUTEUR = 600, LARGEUR = 500;
