@@ -13,9 +13,6 @@ public class Panel2048 extends Panel {
 
 	public Panel2048(Jeu2048 jeu) {
 		this.jeu = jeu;
-
-
-		
 		setLayout(new GridLayout(jeu.getNbLignes(), jeu.getNbCols()));
 		for (int i = 0; i < jeu.getNbLignes(); i++) {
 			for (int j = 0; j < jeu.getNbCols(); j++) {
@@ -23,6 +20,7 @@ public class Panel2048 extends Panel {
 				this.add(carre);
 			}
 		}
+		
 	}
 
 }

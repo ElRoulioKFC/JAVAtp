@@ -33,11 +33,12 @@ public class Fenetre extends Frame {
 		this.add(button, c);
 		
 
-		button = new JButton("Button 2");
+		button = new JButton("Menu");
 		c.fill = GridBagConstraints.HORIZONTAL;
 		c.weightx = 0.5;
 		c.gridx = 1;
 		c.gridy = 0;
+		button.addActionListener( new NavigationListener(this,NavigationListener.MENU));
 		this.add(button, c);
 
 		button = new JButton("Button 3");
@@ -65,7 +66,7 @@ public class Fenetre extends Frame {
 		c.anchor = GridBagConstraints.PAGE_END;
 		c.gridx = 0;
 		c.gridy = 5;
-		this.add(new ScorePanel(jeu),c);
+		this.add(new ScorePanel(jeu,pseudo),c);
 		
 
 		//this.add(b);

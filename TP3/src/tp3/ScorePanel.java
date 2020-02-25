@@ -13,9 +13,11 @@ import package2048.Jeu2048;
 
 public class ScorePanel extends JPanel implements Observer{
 	Jeu2048 jeu;
+	String pseudo;
 	
-	public ScorePanel(Jeu2048 jeu) {
+	public ScorePanel(Jeu2048 jeu,String pseudo) {
 		this.jeu = jeu;
+		this.pseudo = pseudo;
 		jeu.addObserver(this);
 	}
 	
@@ -40,6 +42,22 @@ public class ScorePanel extends JPanel implements Observer{
 		g.drawString("Objectif: " + Integer.toString(jeu.getNbBut()), this.getWidth()-230, 20);
 		g.drawString("Record: " + Integer.toString(jeu.getBestScore()), 0, 40);
 		g.drawString("Nombre max : " + Integer.toString(plusGrosScore()), this.getWidth()-230, 40);
+		g.drawString(pseudo, this.getWidth()-230, 60);
+		g.setColor(Color.WHITE);
+		if (jeu.estTermine()) {
+			font = new Font("Courier", Font.BOLD, 30);
+		    g.setFont(font);
+
+
+			if (jeu.estVainquer()) {
+		g.drawString("Bravo", 0, 65);
+		}else {
+		g.drawString("Dommage", 0, 65);
+
+		}
+			}
+		
+
 
 	}
 
